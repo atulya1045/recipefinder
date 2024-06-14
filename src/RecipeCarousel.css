@@ -1,0 +1,78 @@
+.carousel-container {
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .carousel-button.prev {
+    left: 20px;
+  }
+  
+  .carousel-button.next {
+    right: 20px;
+  }
+  
+  .carousel {
+    overflow: hidden;
+    width: 90%; /* Adjust width to fill page appropriately */
+    max-width: 1200px; /* Set a maximum width */
+    margin: 0 auto; /* Center align the carousel */
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item {
+    flex: 0 0 calc(100% / 5); /* Display five items per slide */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .carousel-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .carousel-caption {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .indicator {
+    width: 8px; /* Adjust dot size */
+    height: 8px; /* Adjust dot size */
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 3px; /* Adjust spacing between dots */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .indicator.active {
+    background-color: #000;
+  }
+  

@@ -1,0 +1,99 @@
+/* Recipe Details component CSS */
+
+.recipe-details {
+  text-align: center;
+  padding: 20px;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.recipe-details-content {
+  text-align: left;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.recipe-title {
+  font-size: 2em;
+  margin: 20px 0;
+}
+
+.recipe-image {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+.recipe-section {
+  margin: 20px 0;
+}
+
+.section-title {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.ingredient-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.recipe-instructions {
+  white-space: pre-wrap;
+}
+
+.favorite-button {
+  padding: 10px 20px;
+  background-color: #ffc107;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.favorite-button.remove {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Carousel styles */
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.slick-prev,
+.slick-next {
+  font-size: 1.5em;
+  color: #007bff;
+  z-index: 1;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  color: #0056b3;
+}
+
+.slick-dots {
+  bottom: 10px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #007bff;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #0056b3;
+}
